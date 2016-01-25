@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+    <title>Place I've been:</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Places I've been:</h1>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Add a place:</h2>
+          <form id="new-place">
+            <div class="form-group">
+              <label for="new-city">City</label>
+              <input type="text" class="form-control" id="new-city">
+            </div>
+            <div class="form-group">
+              <label for="new-state">State</label>
+              <input type="text" class="form-control" id="new-state">
+            </div>
+            <div class="form-group">
+              <label for="new-month">timeOfYear</label>
+              <input type="text" class="form-control" id="timeOfYear">
+            </div>
+            <div class="form-group">
+              <label for="new-month">Landmark</label>
+              <input type="text" class="form-control" id="landmark">
+            </div>
+            <div class="form-group">
+              <label for="new-month">Notes</label>
+              <input type="text" class="form-control" id="notes">
+            </div>
+            <button type="submit" class="btn">Add</button>
+          </form>
+
+          <ul id="placesx">
+
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <div id="hide-results">
+            <h2></h2>
+
+            <p>City: <span class="city-text"></span></p>
+            <p>State: <span class="state-text"></span></p>
+            <p>Time of Year: <span class="timeOfYear-text"></span></p>
+            <p>Landmark: <span class="landmark-text"></span></p>
+            <p>Notes: <span class="notes-text"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
